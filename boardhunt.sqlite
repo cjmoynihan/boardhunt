@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS bd_data (
+	id INTEGER PRIMARY KEY,
+	user TEXT NOT NULL,
+	game TEXT NOT NULL,
+	rating FLOAT
+);
+
+CREATE TABLE IF NOT EXISTS completed_games (
+	game TEXT PRIMARY KEY,
+	date TIMESTAMP
+)
